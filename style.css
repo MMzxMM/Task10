@@ -1,0 +1,250 @@
+a{
+text-decoration: none;
+}
+:root{
+  --main-color: #0078ff;
+}
+/* nav  */
+nav{
+  z-index: 100;
+}
+.nav-link{
+    font-size: 20px;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+.navbar-brand{
+    font-size:30px;
+}
+/* nav end  */
+/* hero  */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://saidelhosiny.github.io/Assignment-4/image/hero-bg.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    text-align: center;
+}
+.hero-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(0, 0, 0, .6);
+}
+.hero p{
+    display: inline-block;
+    text-align: center;
+    animation: typing 3s steps(26) infinite alternate,blinking 1s steps(1) infinite; ;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap; 
+    border-right: 3px solid white ;
+    margin-top: 20px;
+}
+@keyframes blinking {
+    0%{ border-color: transparent; }
+    50%{ border-color: white; }
+    100%{ border-color: transparent; }
+}
+@keyframes typing {
+  from { width: 0ch; }
+  to   { width: 24ch; }
+}
+/* hero end  */
+/* about  */
+#about{
+    background-color: #f5f5f5;
+}
+
+.about-container{
+    background-color: white;
+}
+#about .name::after{
+    content: ' Morgan Freeman';
+}
+#about .profile::after{
+    content: ' full stack developer';
+}
+#about .email::after{
+    content: ' contact@example.com';
+}
+#about .phone::after{
+    content: ' (617) 557-0089';
+}
+
+#about h2,#contact h2{
+    position: relative;
+}
+#about h2::after,#contact h2::after{
+    content: '';
+    position: absolute;
+    background-color: #0078ff;
+    bottom: -4px;
+    width: 90px;
+    height: 3.5px;
+    left: 0;
+}
+
+#about .s2 p{
+    opacity:.6;
+}
+
+/* about end  */ 
+
+/* services */
+#services,#portfolio,#blog{
+  background-color: #f5f5f5;
+  width: 100%;
+  text-align: center;
+}
+
+#services h4,#portfolio h4,#blog h4{
+  font-weight: 400;
+  opacity: 0.7;
+  position: relative;
+  display: inline-block;
+}
+#services h4::after,#portfolio h4::after,#blog h4::after{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 200px;
+  left: 200px;
+  height: 5px;
+  background-color: #0078ff;
+}
+
+.services-card{
+  background-color: white;
+  padding: 10px;
+  border-radius:15px;
+}
+.i-container{
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #0078ff;
+  position: relative;
+  transition: .5s;
+}
+#services i{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s;
+}
+
+.i-container:hover i{
+  color: white;
+}
+
+.i-container:hover{
+  background-color: #0078ff;
+  border-color: #cde1f8
+}
+
+.services-card h2,.services-card p{
+  margin: 10px 0;
+}
+.services-card p{
+  margin-bottom: 20px;
+}
+/* services end  */
+/* space1 */
+.space1,.space2,#contact{
+  background-image: url(https://saidelhosiny.github.io/Assignment-4/image/counters-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 90vh;
+}
+.space1-container,.space2-container,.contact-container{
+  background-color:rgba(0 ,120, 255, 0.6);
+  min-height: inherit;
+}
+.space1 .icontainer{
+  font-size: 2rem;
+  display: inline-block;
+  border: .5rem solid white;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+
+/* space1 end  */
+
+/* portfolio */
+#portfolio .icontainer,.contact-s2 .icontainer{
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.6rem;
+  color: var(--main-color);
+  border-radius: 50%;
+  border: .2rem solid var(--main-color);
+}
+#portfolio img{
+    transition: all .5s ease-in-out;
+}
+#portfolio img:hover{
+  transform: scale(1.1);
+}
+
+/* portfolio end  */
+
+/* space2  */
+
+.space2,#contact{
+  background-image: url(https://saidelhosiny.github.io/Assignment-4/image/overlay-bg.jpg);
+}
+
+/* space2 end  */
+
+/* blog  */
+
+#blog button,#contact button:hover{
+  background-color: var(--main-color);
+}
+#blog button:hover,#contact button:hover{
+  background-color: rgba(0 ,120, 255, 0.8)
+}
+
+/* blod end  */
+
+/* contact */
+.contact-s1 button{
+  background-color: var(--main-color) ;
+}
+.contact-s2 i{
+  color: var(--main-color);
+}
+.contact-s2 .icontainer{
+  transition: all .5s ease-in-out;
+}
+.contact-s2 i{
+  transition: all .5s ease-in-out;
+}
+.contact-s2 .icontainer:hover{
+  background-color: var(--main-color);
+  border-color:transparent;
+}
+.contact-s2 .icontainer:hover i{
+  color: white;
+}
+
+
+/* contact end  */
+
+/* footer  */
+footer{
+  background-color: #0078ff;
+}
+/* footer end  */
