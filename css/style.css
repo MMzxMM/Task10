@@ -248,3 +248,24 @@ footer{
   background-color: #0078ff;
 }
 /* footer end  */
+
+/* text overlap with pfp in ab fix  */
+@media (max-width: 768px) {
+  #about .s1-up {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about .s1-up .img-container,
+  #about .s1-up .text {
+    width: 100% !important;
+  }
+
+  #about .s1-up img {
+    max-width: 200px;
+    margin-bottom: 15px;
+  }
+}
+ /* text overlap with pfp in ab fix  end */
+
